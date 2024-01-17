@@ -14,7 +14,7 @@ export default function Home() {
   const [amount, setAmount] = React.useState("");
 
   const handleChange = (event: SelectChangeEvent) => {
-    setAmount(event.target.value as string);
+    if (typeof event.target.value === 'string') setAmount(event.target.value);
   };
 
   return (
