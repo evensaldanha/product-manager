@@ -27,12 +27,10 @@ export default function Home() {
       noValidate
       autoComplete="off"
     >
-      <TextField id="outlined-basic" label="Produto" variant="outlined" />
+      <TextField  label="Produto" variant="outlined" />
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Quantidade</InputLabel>
+        <InputLabel >Quantidade</InputLabel>
         <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
           value={amount}
           label="Quantidade"
           onChange={handleChange}
